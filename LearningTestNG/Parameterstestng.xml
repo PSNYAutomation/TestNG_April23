@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<!-- Test level parameters will have higher precedence over suite level parameters as they will 
+	get updated at test level -->
+	<parameter name="browserName" value="chrome"/>
+	<parameter name="url" value="https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"/>
+	<parameter name="userName" value="Admin"/>
+	<parameter name="password" value="admin124"/>
+	
+  <test name="ParametersTest">
+	  <parameter name="password" value="admin123"/>
+    <classes>
+      <class name="com.smart.test.ParametersTesting"/>
+    </classes>
+  </test>  
+</suite>  

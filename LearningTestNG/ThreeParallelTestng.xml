@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests" thread-count="3">
+ 
+  <test name="GoogleTest">
+    <classes>
+      <class name="com.smart.parallelTest.FirstTest"> 
+		  <methods>
+			  <include name="testGoogle"/>
+		  </methods>		  
+	  </class>
+    </classes>
+  </test> 
+  
+  <test name="FacebookTest">
+    <classes>
+      <class name="com.smart.parallelTest.FirstTest"> 
+		  <methods>
+			  <include name="testFacebook"/>
+		  </methods>		  
+	  </class>
+    </classes>
+  </test> 
+  
+  <test name="OrangeHRMTest">
+    <classes>
+      <class name="com.smart.parallelTest.FirstTest"> 
+		  <methods>
+			  <include name="testOrangeHRMLogin"/>
+		  </methods>		  
+	  </class>
+    </classes>
+  </test> 
+  
+  
+   
+</suite>  
